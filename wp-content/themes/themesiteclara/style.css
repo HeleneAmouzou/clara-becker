@@ -1,0 +1,41 @@
+/*
+Theme Name: themesiteclara
+*/
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #f2f2f0;
+}
+
+.container {
+    display: flex;
+}
+
+.vertical-menu {
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    font-size: large;
+    font-weight: bold;
+}
+
+.vertical-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-menu li {
+    margin-bottom: 10px;
+}
+
+.vertical-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    height: 100vh;
+}
