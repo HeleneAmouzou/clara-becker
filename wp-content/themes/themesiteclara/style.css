@@ -1,5 +1,8 @@
 /*
 Theme Name: themesiteclara
+Theme URI: https://www.clara-becker.com
+Authors: Gwenaelle Nicolas & Helene Amouzou
+Description: Thème pour le site clara-becker.com
 */
 
 body {
@@ -38,4 +41,58 @@ body {
     flex: 1;
     padding: 20px;
     height: 100vh;
+}
+
+.logo {
+    position: relative;
+    background-size: cover;
+    text-align: left;
+    color: black;
+   
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.logo h1 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 2;
+    font-size: larger;
+}
+
+.footer-content {
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+    background-color: #f2f2f0;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Autres styles CSS existants ... */
+
+/* Ajoutez des styles spécifiques pour les écrans de petite taille (par exemple, jusqu'à 768px) */
+@media screen and (max-width: 768px) {
+   
+    .footer-content {
+        flex-direction: column; /* Réorganisez les éléments en colonne */
+        padding: 20px; /* Ajoutez un peu d'espacement entre les éléments */
+    }
+
+    .footer-content p {
+        margin: 10px 0; /* Espacement vertical entre les paragraphes */
+    }
 }
