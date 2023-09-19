@@ -5,49 +5,94 @@ Authors: Gwenaelle Nicolas & Helene Amouzou
 Description: Thème pour le site clara-becker.com
 */
 
-*
 body {
     font-family: 'Jost', sans-serif;
     background-color: #f2f2f0;
 }
 
-.site-grid-container {
-    display: grid;
-    grid-template-columns: 200px auto;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header header"
-        "vertical-menu content"
-        "footer footer";
-    min-height: 100vh;
-}
-
-.header {
-    grid-area: header;
-    background-color: #f2f2f0;
+.container {
+    display: flex;
 }
 
 .vertical-menu {
     width: 200px;
-    grid-area: vertical-menu;
     padding: 20px;
     box-sizing: border-box;
+    height: 100vh;
     font-size: large;
     font-weight: bold;
 }
 
+.vertical-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-menu li {
+    margin-bottom: 10px;
+}
+
+.vertical-menu a {
+    text-decoration: none;
+    color: black;
+}
+
 .content {
-    grid-area: content;
+    flex: 1;
     padding: 20px;
-    background-color: #f2f2f0;
+    height: 100vh;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: #f2f2f0;
-    text-align: center; 
+.logo {
+    position: relative;
+    background-size: cover;
+    text-align: left;
+    color: black;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.logo h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); /* Vertically center the h1 within the logo div */
+    padding: 10px 20px;
+    z-index: 2;
+    font-size: larger;
 }
 
 
+.footer-content {
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+}
 
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
+/* Autres styles CSS existants ... */
+
+/* Ajoutez des styles spécifiques pour les écrans de petite taille (par exemple, jusqu'à 768px) */
+@media screen and (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column; /* Réorganisez les éléments en colonne */
+        padding: 20px; /* Ajoutez un peu d'espacement entre les éléments */
+    }
+
+    .footer-content p {
+        margin: 10px 0; /* Espacement vertical entre les paragraphes */
+    }
+}
