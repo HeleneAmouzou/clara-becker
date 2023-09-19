@@ -60,7 +60,7 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%); /* Vertically center the h1 within the logo div */
+    transform: translateY(-50%);
     padding: 10px 20px;
     z-index: 2;
     font-size: larger;
@@ -82,17 +82,18 @@ footer {
     left: 0;
 }
 
-/* Autres styles CSS existants ... */
+.footer-content p {
+    padding: 10px;
+}
 
-/* Ajoutez des styles spécifiques pour les écrans de petite taille (par exemple, jusqu'à 768px) */
 @media screen and (max-width: 768px) {
 
     .footer-content {
-        flex-direction: column; /* Réorganisez les éléments en colonne */
-        padding: 20px; /* Ajoutez un peu d'espacement entre les éléments */
+        flex-direction: column; 
+        padding: 20px;
     }
 
     .footer-content p {
-        margin: 10px 0; /* Espacement vertical entre les paragraphes */
+        margin: 10px 0;
     }
 }

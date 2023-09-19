@@ -73,6 +73,7 @@ function themesiteclara_settings_fields_validate($inputs) {
 }
 
 
+
     
 add_action('admin_init', 'themesiteclara_settings_register');
 add_action('init', 'register_custom_menus');
